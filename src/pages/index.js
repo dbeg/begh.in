@@ -3,8 +3,6 @@ import "../styles/index.css"
 
 const pageStyle = {
   height: "100vh",
-  backgroundColor: "red",
-  backgroundImage: "linear-gradient(to right, red, #f06d06)",
   display: "flex",
   flexDirection: "column",
   justifyContent: "center"
@@ -18,7 +16,7 @@ const headingStyle = {
 
 const IndexPage = () => {
   return (
-    <main style={pageStyle}>
+    <main id="gradient" style={pageStyle}>
       <title>begh.in</title>
       <h1 style={headingStyle}>
         https://begh.in

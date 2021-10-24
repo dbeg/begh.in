@@ -1,11 +1,26 @@
-body {
-    color: #232129;
-    font-family: "Inter", sans-serif, serif;
-    font-size: 24px;
-    padding: 0;
-    margin: 0;
+#gradient
+{
+    background-color: #eae2b7;
+    background: linear-gradient(100deg, #eae2b7, #fcbf49, #f77f00, #d62828, #003049);
+    background-size: 1000% 100%;
+
+    -webkit-animation: Animation 120s ease-in-out infinite;
+    -moz-animation: Animation 120s ease-in-out infinite;
+    animation: Animation 120s ease-in-out infinite;
 }
 
-h1 {
-    font-family: "Domine", serif, sans-serif;
+@-webkit-keyframes Animation {
+    0% { background-position: 0% 0%; }
+    50% { background-position: 100% 0%; }
+    100% { background-position: 0% 0%; }
+}
+@-moz-keyframes Animation {
+    0% { background-position: 0% 0%; }
+    50% { background-position: 100% 0%; }
+    100% { background-position: 0% 0%; }
+}
+@keyframes Animation { 
+    0% { background-position: 0% 0%; }
+    50% { background-position: 100% 0%; }
+    100% { background-position: 0% 0%; }
 }
