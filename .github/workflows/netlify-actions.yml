@@ -1,0 +1,26 @@
+name: Wait for Netlify Preview URL
+on:
+  push:
+  pull_request:
+jobs:
+  build:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Wait for Netlify Preview URL
+        uses: kamranayub/wait-for-netlify-action@2.0.0
+        id: wait-for-netflify-preview
+        with:
+          site_name: "begh-dot-in"
+          max_timeout: 60
+        env:
+          NETLIFY_TOKEN: ${{secrets.NETLIFY_TOKEN}}
+      - name: Comment
+        uses: actions/github-script@v5
+        with:
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: ':rocket: -> ${{ steps.wait-for-netflify-preview.outputs.url }} (${{ steps.wait-for-netflify-preview.outputs.site_id }} - ${{ steps.wait-for-netflify-preview.outputs.deploy_id }})'
+            })
