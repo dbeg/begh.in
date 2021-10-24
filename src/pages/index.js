@@ -1,19 +1,25 @@
 import * as React from "react"
+import "../styles/index.css"
 
-const pageStyles = {
-  color: "#232129",
-  padding: 96,
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
+const pageStyle = {
+  height: "100vh",
+  backgroundColor: "red",
+  backgroundImage: "linear-gradient(to right, red, #f06d06)",
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "center"
 }
-const headingStyles = {
-  textAlign: "center"
+const headingStyle = {
+  textAlign: "center",
+  margin: 0,
+  fontSize: "10vw"
 }
 
 const IndexPage = () => {
   return (
-    <main style={pageStyles}>
+    <main style={pageStyle}>
       <title>begh.in</title>
-      <h1 style={headingStyles}>
+      <h1 style={headingStyle}>
         begh.in
       </h1>
     </main>
