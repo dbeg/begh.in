@@ -19,7 +19,7 @@
     "@fontsource/inter": "^4.5.0",
     "gatsby": "^5.14.1",
     "react": "^17.0.2",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.2"
   },
   "devDependencies": {
     "gatsby-plugin-manifest": "^5.14.0"
