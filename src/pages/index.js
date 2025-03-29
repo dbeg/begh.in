@@ -10,7 +10,7 @@ const pageStyle = {
 const headingStyle = {
   textAlign: "center",
   margin: 0,
-  fontSize: "10vw",
+  fontSize: "4vw",
   textDecoration: "underline",
 }
 
@@ -19,7 +19,7 @@ const IndexPage = () => {
     <main id="gradient" style={pageStyle}>
       <title>begh.in</title>
       <h1 style={headingStyle}>
-        https://begh.in
+        begh.in
       </h1>
     </main>
   )
