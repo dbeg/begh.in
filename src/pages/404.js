@@ -16,14 +16,11 @@ const paragraphStyles = {
 const NotFoundPage = () => {
   return (
     <main style={pageStyles}>
-      <title>Oops... Page not found | begh.in</title>
-      <h1 style={headingStyles}>Oops... Page not found</h1>
+      <title>Ope! Page not found | begh.in</title>
+      <h1 style={headingStyles}>Ope! Page not found!</h1>
       <p style={paragraphStyles}>
-        Sorry{" "}
-        <span role="img" aria-label="Pensive emoji">
-          😔
-        </span>{" "}
-        we couldn’t find what you were looking for.
+        <span role="img" aria-label="Pensive emoji">😔</span>{" "}
+        I couldn’t find what you were looking for.
         <br />
         <br />
         <Link to="/">Go home</Link>.

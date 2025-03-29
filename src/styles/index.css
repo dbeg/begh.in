@@ -1,7 +1,7 @@
 #gradient
 {
-    background-color: #eae2b7;
-    background: linear-gradient(100deg, #eae2b7, #fcbf49, #f77f00, #d62828, #003049);
+    background-color: #CCD5AE;
+    background: linear-gradient(100deg, #CCD5AE, #E9EDC9, #FEFAE0, #FAEDCD, #D4A373);
     background-size: 1000% 100%;
 
     -webkit-animation: Animation 120s ease-in-out infinite;
